@@ -28,7 +28,7 @@ def lambda_handler(event, context):
 
         assumed_role = sts.assume_role(
             RoleArn=f"arn:aws:iam::{body['resource']['accountId']}:role/Prisma_VPC_Term_Role",
-            RoleSessionName="PrismaLambda"
+            RoleSessionName="PrismaSession"
         )
         credentials=assumed_role['Credentials']
 
