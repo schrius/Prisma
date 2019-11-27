@@ -1,4 +1,4 @@
-# This Lambda design to Clean Non-AWS-Virginia VPC Resource
+# This Lambda function design to Clean up all Non-AWS-Virginia VPC Resource
 
 import json
 import boto3
